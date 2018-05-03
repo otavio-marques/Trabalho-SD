@@ -5,7 +5,7 @@ $( function() {
           url: "app/endereco.php",
           dataType: "json",
           data: {
-            _action: 'get_endereco', // Método remoto
+            _action: 'get_endereco_cidade', // Método remoto
             term: request.term // Parâmetro enviado ao método
           },
           success: function( data ) {
@@ -13,7 +13,7 @@ $( function() {
           }
         } );
       },
-      minLength: 4,
+      minLength: 2,
       select: function( event, ui ) {
         // Alimenta os campos a partir do retorno do método remoto
         $("#logradouro").val(ui.item.logradouro);
