@@ -31,17 +31,9 @@ $(document).ready(function () {
 
   $seuCampoCpf.mask('000.000.000-00', {reverse: true});
 
-});
-
-$(document).ready(function () {
-
   var $seuCampoTelefone = $("#telefone");
 
   $seuCampoTelefone.mask('(00)0000-0000', {reverse: true});
-
-});
-
-$(document).ready(function () {
 
   var $seuCampoCelular = $("#celular");
 
